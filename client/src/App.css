@@ -1,0 +1,245 @@
+/*For App.js*/
+/* Ensure HTML and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  background-color: #2b2b2b; /* Dark gray */
+  color: #ffffff; /* White text */
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #007acc; /* Blue */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Main content wrapper */
+.entire-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px; /* Adjust for navbar height */
+  padding: 20px;
+}
+
+/* Centered content box */
+.content {
+  background-color: #404040; /* Dark gray */
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px; /* Restrict max width */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Footer */
+.footer {
+  background-color: #3b3b3b; /* Gray */
+  color: #d1d1d1; /* Light gray */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Links */
+.custom-link {
+  color: #e0f7fa; /* Light blue */
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #ff4c4c; /* Red on hover */
+}
+
+/* Headings */
+.custom-text {
+  color: #66d9ef; /* Cyan blue for headings */
+}
+
+/*For FileList.jsx*/
+/* Glassmorphism Container */
+.glass-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  max-width: 900px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+}
+
+/* Table Styles */
+.table {
+  margin-top: 20px;
+  background: transparent;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #e0f7fa;
+  font-weight: 800;
+}
+
+/* .table thead th {
+  background: rgba(0, 122, 204, 0.8); 
+  color: #ffffff; 
+} */
+
+.table-hover tbody tr:hover {
+  background: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/*For FileDownload.jsx*/
+/* General Container */
+.download-container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #e0f7fa; /* Light blue */
+}
+
+/* Select Dropdown */
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #333333; /* Dark gray */
+  color: #e0f7fa; /* Light blue */
+  font-size: 16px;
+  outline: none;
+}
+
+.form-select:focus {
+  border: 2px solid #66d9ef; /* Cyan blue border on focus */
+}
+
+/* Button */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007acc; /* Blue */
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:disabled {
+  background-color: #555555; /* Gray for disabled */
+  cursor: not-allowed;
+}
+
+.btn-primary:hover {
+  background-color: #005a9e; /* Darker blue */
+}
+
+/*For FileUpload.jsx*/
+/* General Container */
+.upload-container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #e0f7fa; /* Light blue */
+}
+
+/* File Input */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #333333; /* Dark gray */
+  color: #e0f7fa; /* Light blue */
+  font-size: 16px;
+  outline: none;
+}
+
+.form-control:focus {
+  border: 2px solid #66d9ef; /* Cyan blue border on focus */
+}
+
+/* Button */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007acc; /* Blue */
+  border: none;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #005a9e; /* Darker blue */
+}
+
+.btn-primary:disabled {
+  background-color: #555555; /* Gray for disabled */
+  cursor: not-allowed;
+}
